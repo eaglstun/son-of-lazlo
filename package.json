@@ -1,0 +1,22 @@
+{
+  "name": "son-of-lazlo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "transparent.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eaglstun/son-of-lazlo.git"
+  },
+  "author": "Eric Eaglstun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eaglstun/son-of-lazlo/issues"
+  },
+  "homepage": "https://github.com/eaglstun/son-of-lazlo#readme",
+  "dependencies": {
+    "grunt": "^1.0.2"
+  }
+}
