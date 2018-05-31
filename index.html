@@ -14,25 +14,28 @@ son of lazlo
 ! ROOM_FORMAT 1
 
 PAL 0
-158,111,63
-141,43,32
-255,255,255
+219,206,188
+94,30,36
+62,110,56
+207,32,32
+49,81,240
+240,131,3
 
 ROOM 0
 l,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
-m,n,o,o,o,o,o,o,o,o,o,o,o,o,o,o
-b,d,0,0,0,0,0,0,0,0,0,0,0,f,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,e,c,0
-0,0,0,0,0,0,i,j,k,0,0,0,0,g,h,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+q,n,o,o,o,o,o,o,o,o,o,o,o,o,o,o
+q,p,0,0,0,0,0,0,0,0,0,0,0,f,0,0
+q,p,0,0,0,0,0,0,0,0,0,0,0,e,c,0
+q,p,0,0,0,0,i,j,k,0,0,0,0,g,h,0
+q,p,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+m,p,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+b,d,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,f,c,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,m,p,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,b,d,0,0,0,0,0,0,0
 0,0,0,0,0,a,c,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,b,d,0,0,0,0,0,0,0,0,0
-0,0,0,a,c,0,0,0,0,0,0,0,0,o,d,0
+0,0,0,a,c,0,0,0,0,0,0,0,0,t,s,0
 0,a,c,b,d,0,0,0,0,0,0,0,0,0,0,0
 0,b,d,0,0,0,0,0,0,0,0,0,0,0,0,0
 PAL 0
@@ -125,9 +128,9 @@ TIL i
 10000000
 10000000
 11111111
-11010101
 10101010
 11010101
+10101010
 11111111
 
 TIL j
@@ -135,9 +138,9 @@ TIL j
 00000000
 00000000
 11111111
-01010101
 10101010
 01010101
+10101010
 11111111
 
 TIL k
@@ -145,9 +148,9 @@ TIL k
 00000001
 00000001
 11111111
-01010101
 10101011
 01010101
+10101011
 11111111
 
 TIL l
@@ -176,7 +179,7 @@ TIL n
 10101010
 01010101
 10101010
-01010000
+01010101
 10100000
 01010000
 10100000
@@ -192,10 +195,61 @@ TIL o
 00000000
 00000000
 
+TIL p
+10100000
+01010000
+10100000
+01010000
+10100000
+01010000
+10100000
+01010000
+
+TIL q
+10000001
+10000001
+11111111
+10000001
+10000001
+10000001
+10000001
+10000001
+WAL true
+
+TIL r
+10000000
+01000000
+10100000
+01010000
+10101000
+01010100
+10101010
+01010101
+
+TIL s
+00000000
+01000000
+10100000
+01000000
+10100000
+00010000
+00000000
+00000000
+
+TIL t
+10101000
+01010101
+00101010
+01010101
+00001010
+00000101
+00000000
+00000000
+
 SPR A
 00001000
 00111100
-01100110
+01101110
 10111101
 00000000
 00010000
@@ -204,34 +258,44 @@ SPR A
 >
 00010000
 00111100
-01100110
+01101110
 10111101
 00001000
 00000000
 00010101
 00001010
-POS 0 3,3
+>
+00010000
+00111100
+01110110
+10111101
+00000000
+00001000
+00000101
+00001010
+>
+00001000
+00111100
+01110110
+10111101
+00010000
+00000000
+00000101
+00001010
+POS 0 4,3
 
 SPR a
 00000000
+00111100
+01111110
+01111110
+01011010
+01100110
+00111100
 00000000
-00111000
-01111100
-01111100
-01010100
-00111010
-00010100
->
-00000000
-00111000
-01111100
-01111100
-01010100
-00111000
-00101010
-00010100
 DLG SPR_0
-POS 0 8,12
+POS 0 7,13
+COL 5
 
 SPR b
 00000100
@@ -281,7 +345,6 @@ SPR d
 10111101
 00010100
 DLG SPR_5
-POS 0 10,6
 
 SPR e
 00000001
@@ -349,6 +412,40 @@ SPR h
 DLG SPR_4
 POS 0 12,12
 
+SPR i
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+
+SPR j
+00000000
+00111110
+01111110
+01111110
+01011010
+01100110
+01111100
+00000000
+POS 0 13,8
+COL 4
+
+SPR k
+00000000
+00011000
+00111100
+01111110
+01011010
+01100110
+00111100
+00000000
+POS 0 2,9
+COL 3
+
 ITM 0
 00000000
 00000000
@@ -384,6 +481,8 @@ im doofus
 
 VAR a
 42
+
+    
 
 
 </script>
@@ -7002,6 +7101,112 @@ var scriptModule = new Script();
 var scriptInterpreter = scriptModule.CreateInterpreter();
 var scriptUtils = scriptModule.CreateUtils(); // TODO: move to editor.js?
 // scriptInterpreter.SetDialogBuffer( dialogBuffer );
+
+// hacks!
+(function (bitsy) {
+    'use strict';
+    var hackOptions = {
+        // if true, overrides scaling behaviour to reduce the setup time + memory use,
+        // but the game will be blurry unless you've added pixelated image CSS
+        scaling: false
+    };
+    
+    bitsy = bitsy && bitsy.hasOwnProperty('default') ? bitsy['default'] : bitsy;
+    
+    
+    
+    
+    
+    // override imageDataFromImageSource to use transparency for background pixels
+    // and save the results to a custom image cache
+    var _imageDataFromImageSource = bitsy.imageDataFromImageSource;
+    bitsy.imageDataFromImageSource = function (imageSource, pal) {
+        var cache;
+        return function (args) {
+            if (cache) {
+                return cache;
+            }
+    
+            // get the bitsy image data
+            var img = _imageDataFromImageSource.apply(undefined, args);
+    
+            // make background pixels transparent
+            var bg = bitsy.getPal(pal)[0];
+            var i;
+            // discard unnecessary pixels
+            if (hackOptions.scaling) {
+                var scaledImg = bitsy.ctx.createImageData(img.width / bitsy.scale, img.height / bitsy.scale);
+                for (var y = 0; y < scaledImg.height; ++y) {
+                    for (var x = 0; x < scaledImg.width; ++x) {
+                        var idx = (y * scaledImg.width + x) * 4;
+                        var idx2 = (y * bitsy.scale * img.width + x * bitsy.scale) * 4;
+                        scaledImg.data[idx + 0] = img.data[idx2 + 0];
+                        scaledImg.data[idx + 1] = img.data[idx2 + 1];
+                        scaledImg.data[idx + 2] = img.data[idx2 + 2];
+                        scaledImg.data[idx + 3] = img.data[idx2 + 3];
+                    }
+                }
+                img = scaledImg;
+            }
+    
+            // set background pixels to transparent
+            for (i = 0; i < img.data.length; i += 4) {
+                if (
+                    img.data[i + 0] === bg[0] &&
+                    img.data[i + 1] === bg[1] &&
+                    img.data[i + 2] === bg[2]
+                ) {
+                    img.data[i + 3] = 0;
+                }
+            }
+    
+            // give ourselves a little canvas + context to work with
+            var spriteCanvas = document.createElement("canvas");
+            spriteCanvas.width = bitsy.tilesize * (hackOptions.scaling ? 1 : bitsy.scale);
+            spriteCanvas.height = bitsy.tilesize * (hackOptions.scaling ? 1 : bitsy.scale);
+            var spriteContext = spriteCanvas.getContext("2d");
+    
+            // put bitsy data to our canvas
+            spriteContext.clearRect(0, 0, bitsy.tilesize, bitsy.tilesize);
+            if (hackOptions.scaling) {
+                spriteContext.putImageData(img, 0, 0, 0, 0, bitsy.tilesize, bitsy.tilesize);
+            } else {
+                spriteContext.putImageData(img, 0, 0);
+            }
+    
+            // save it in our cache
+            cache = spriteCanvas;
+    
+            // return our image	
+            return cache;
+        }.bind(undefined, arguments)
+    };
+    
+    // override drawTile to draw from our custom image cache
+    // instead of putting image data directly
+    bitsy.drawTile = function (img, x, y, context) {
+        if (!context) { //optional pass in context; otherwise, use default
+            context = bitsy.ctx;
+        }
+    
+        if (hackOptions.scaling) {
+            context.drawImage(
+                img(),
+                x * bitsy.tilesize * bitsy.scale,
+                y * bitsy.tilesize * bitsy.scale,
+                bitsy.tilesize * bitsy.scale,
+                bitsy.tilesize * bitsy.scale
+            );
+        } else {
+            context.drawImage(
+                img(),
+                x * bitsy.tilesize * bitsy.scale,
+                y * bitsy.tilesize * bitsy.scale
+            );
+        }
+    };
+    
+    }(window));
 </script>
 
 </head>
